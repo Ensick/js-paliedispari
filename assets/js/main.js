@@ -15,3 +15,24 @@ Dichiariamo chi ha vinto.
 
 /* Snack-1 */
 
+let parola = prompt("Inserisci una parola palindroma")
+
+let parolaCapovolta = "";
+
+console.log(parola.length)
+
+for ( let i = parola.length - 1; i >= 0 ; i--){
+    
+    parolaCapovolta += parola[i]
+
+}
+
+if(parola == parolaCapovolta ){
+
+console.log("la parola è palindroma")
+
+}else{
+
+    console.log("la parola inserita non è palindroma")
+
+}
