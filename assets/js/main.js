@@ -45,30 +45,38 @@ console.log(validatorePalindromo(parola)) */
 /* Snack-2 */
 
 
-let InserisciPariDispari = prompt("Scrivi pari o dispari")
+let InserisciPariDispari = "";
 
-let pari = "pari"
+let condizioneWhile = true
 
-let dispari = "dispari"
+while(condizioneWhile){
 
+    InserisciPariDispari = prompt("Scrivi pari o dispari").toLowerCase()
 
+    if(InserisciPariDispari === "pari"|| InserisciPariDispari === "dispari"){
+        
+        condizioneWhile = false
 
-if(InserisciPariDispari == "pari"){
-
-    InserisciPariDispari = pari
-
-}else if(InserisciPariDispari == "dispari"){
-
-    InserisciPariDispari = dispari
-
-}else{
-
-    InserisciPariDispari = prompt("Inserisci pari o dispari")
-    
+    }
 }
-    
 
-let inserisciNumero = parseInt(prompt("Scegli un numero da 1 a 5"))
+condizioneWhile = true
+
+let inserisciNumero 
+
+while(condizioneWhile){
+
+    inserisciNumero = parseInt(prompt("Scegli un numero da 1 a 5"))
+
+    if(inserisciNumero === 1 || inserisciNumero === 2 || inserisciNumero === 3 || inserisciNumero === 4 || inserisciNumero === 5){
+        
+        condizioneWhile = false
+
+    }else{
+
+        alert("AO DEVI METTE UN NUMERO DA 1 A 5 !!!")
+    }
+}
 
 console.log(inserisciNumero)
 
@@ -114,4 +122,5 @@ function calcoloSomma(risultatoSomma){
 }
 
 calcoloSomma(somma)
+
 
