@@ -44,7 +44,28 @@ console.log(validatorePalindromo(parola)) */
 
 /* Snack-2 */
 
-/* let inserisciNumero = parseInt(prompt("Scegli un numero pari o dispari da 1 a 5"))
+
+let InserisciPariDispari = prompt("Inserisci pari o dispari")
+
+let pari = "pari"
+
+let dispari = "dispari"
+
+if(InserisciPariDispari == "pari"){
+
+    InserisciPariDispari == pari
+
+}else if(InserisciPariDispari == "dispari"){
+
+    InserisciPariDispari == dispari
+
+}else{
+
+    alert("AO HO DETTO PARI O DISPARI....CAPITO MO?")
+
+}
+
+let inserisciNumero = parseInt(prompt("Scegli un numero da 1 a 5"))
 
 console.log(inserisciNumero)
 
@@ -53,35 +74,37 @@ let risultatoCalcoloRandom = 0
 
 function calcoloRandom(min , max){
 
-    let numeroRandom = Math.floor(Math.random() * max ) + min
-
-    console.log(numeroRandom)
-
-    let somma = inserisciNumero + numeroRandom
-
-    console.log(somma)
-
-    return risultatoCalcoloRandom = somma
+    return  Math.floor(Math.random() * max ) + min
 
 }
 
-calcoloRandom(1, 5)
+let numeroRandom = calcoloRandom(1, 5)
+
+console.log(numeroRandom)
+
+let somma = inserisciNumero + numeroRandom
+
+console.log(somma)
 
 
 function calcoloSomma(risultatoSomma){
 
-    if(risultatoSomma % 2 === 0){
+    if(risultatoSomma % 2 === 0 && InserisciPariDispari == "pari"){
         
-        console.log("la somma è pari")
+        alert("Hai Vinto")
+
+
+    }else if(InserisciPariDispari == "dispari"){
+
+        alert("Hai Vinto")
 
     }else{
-
-        console.log("la somma è dispari")
+        
+        alert("Hai Perso")
 
     }
 
-
 }
 
-calcoloSomma(risultatoCalcoloRandom) */
+calcoloSomma(somma)
 
