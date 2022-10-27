@@ -15,24 +15,73 @@ Dichiariamo chi ha vinto.
 
 /* Snack-1 */
 
-let parola = prompt("Inserisci una parola palindroma")
+/* let parola = prompt("Inserisci una parola palindroma")
 
 let parolaCapovolta = "";
 
-console.log(parola.length)
 
-for ( let i = parola.length - 1; i >= 0 ; i--){
+function validatorePalindromo(x){
+
+    for ( let i = x.length - 1; i >= 0 ; i--){
     
-    parolaCapovolta += parola[i]
+        parolaCapovolta += x[i]
+
+    }
+
+    if(x == parolaCapovolta ){
+    
+        return "la parola è palindroma"
+        
+    }else{
+    
+        return "la parola inserita non è palindroma"
+    }
+    
+}
+
+console.log(validatorePalindromo(parola)) */
+
+
+/* Snack-2 */
+
+/* let inserisciNumero = parseInt(prompt("Scegli un numero pari o dispari da 1 a 5"))
+
+console.log(inserisciNumero)
+
+let risultatoCalcoloRandom = 0
+
+
+function calcoloRandom(min , max){
+
+    let numeroRandom = Math.floor(Math.random() * max ) + min
+
+    console.log(numeroRandom)
+
+    let somma = inserisciNumero + numeroRandom
+
+    console.log(somma)
+
+    return risultatoCalcoloRandom = somma
 
 }
 
-if(parola == parolaCapovolta ){
+calcoloRandom(1, 5)
 
-console.log("la parola è palindroma")
 
-}else{
+function calcoloSomma(risultatoSomma){
 
-    console.log("la parola inserita non è palindroma")
+    if(risultatoSomma % 2 === 0){
+        
+        console.log("la somma è pari")
+
+    }else{
+
+        console.log("la somma è dispari")
+
+    }
+
 
 }
+
+calcoloSomma(risultatoCalcoloRandom) */
+
