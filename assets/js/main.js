@@ -45,25 +45,28 @@ console.log(validatorePalindromo(parola)) */
 /* Snack-2 */
 
 
-let InserisciPariDispari = prompt("Inserisci pari o dispari")
+let InserisciPariDispari = prompt("Scrivi pari o dispari")
 
 let pari = "pari"
 
 let dispari = "dispari"
 
+
+
 if(InserisciPariDispari == "pari"){
 
-    InserisciPariDispari == pari
+    InserisciPariDispari = pari
 
 }else if(InserisciPariDispari == "dispari"){
 
-    InserisciPariDispari == dispari
+    InserisciPariDispari = dispari
 
 }else{
 
-    alert("AO HO DETTO PARI O DISPARI....CAPITO MO?")
-
+    InserisciPariDispari = prompt("Inserisci pari o dispari")
+    
 }
+    
 
 let inserisciNumero = parseInt(prompt("Scegli un numero da 1 a 5"))
 
@@ -80,9 +83,13 @@ function calcoloRandom(min , max){
 
 let numeroRandom = calcoloRandom(1, 5)
 
+alert(`Numero Pc = ${numeroRandom}`)
+
 console.log(numeroRandom)
 
 let somma = inserisciNumero + numeroRandom
+
+alert(` ${inserisciNumero} + ${numeroRandom} = ${somma}`)
 
 console.log(somma)
 
